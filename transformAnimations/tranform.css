@@ -1,0 +1,51 @@
+div {
+    margin: 50px;
+    width: 200px;
+    height: 100px;
+}
+
+#translate {
+    background-color: teal;
+}
+
+#translate:hover {
+    transform: translate(40px, 40px);
+    transition: transform 2s ease;
+}
+
+#rotate {
+    background-color: thistle;
+}
+
+#rotate:hover {
+    transform: rotate(360deg);
+    transition: transform 4s ease;
+}
+
+#scale {
+    background-color: tomato;
+}
+
+#scale:hover {
+    transform: scale(1.5, 1.5);
+    transition: transform 2s ease;
+}
+
+#skew {
+    background-color: turquoise;
+}
+
+#skew:hover {
+    transform: skew(20deg, 10deg);
+    transition: transform 2s linear;
+}
+
+#rotate-3d {
+    background-color: yellowgreen;
+}
+
+#rotate-3d:hover {
+    transition: transform 2s ease;
+    transform: rotateX(120deg);
+    perspective: 50px;
+}

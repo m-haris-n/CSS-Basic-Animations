@@ -1,0 +1,31 @@
+@keyframes example {
+    0% {
+        background-color: turquoise;
+    }
+    33% {
+        background-color: tomato;
+        transform: rotate(180deg);
+    }
+    66% {
+        transform: rotate(0deg);
+        background-color: teal;
+    }
+    100% {
+        background-color: thistle;
+        transform: scale(0.5, 0.5);
+    }
+}
+
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+}
+.animation:hover {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
